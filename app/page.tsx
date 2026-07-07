@@ -12,6 +12,8 @@ export default function Home() {
   const [segment, setSegment] = useState<Segment>('all');
 
   const funnelStages = getFunnelValues(SEED_ACCOUNTS, metric, segment);
+  // Always compute GMV stages for the cliff annotation (shows €X lost even in count mode)
+  const gmvStages = getFunnelValues(SEED_ACCOUNTS, 'gmv', segment);
   const triggerRules = getTriggerCounts(SEED_ACCOUNTS, segment);
 
   return (
@@ -29,7 +31,7 @@ export default function Home() {
             className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-6"
             style={{ minHeight: 'calc(100vh - 180px)' }}
           >
-            <Funnel stages={funnelStages} metric={metric} />
+            <Funnel stages={funnelStages} gmvStages={gmvStages} metric={metric} />
             <TriggerLayer rules={triggerRules} />
           </div>
         </div>

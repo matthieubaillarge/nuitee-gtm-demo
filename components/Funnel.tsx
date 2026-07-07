@@ -5,15 +5,21 @@ import { FunnelStage } from './FunnelStage';
 
 interface FunnelProps {
   stages: StageData[];
+  gmvStages: StageData[];  // Always GMV values, for cliff annotation
   metric: Metric;
 }
 
-export function Funnel({ stages, metric }: FunnelProps) {
+export function Funnel({ stages, gmvStages, metric }: FunnelProps) {
   const maxValue = stages.length > 0 ? stages[0].value : 0;
 
   // The cliff is always at stage 2 (Production Call) per the PRD
   // This is the "sandbox call → production call" drop (~45%, the steepest)
   const cliffIndex = 2;
+
+  // Calculate GMV loss at the cliff (always in euros, even when showing count)
+  const gmvAtPreviousStage = gmvStages[cliffIndex - 1]?.value || 0;
+  const gmvAtCliffStage = gmvStages[cliffIndex]?.value || 0;
+  const gmvLoss = gmvAtPreviousStage - gmvAtCliffStage;
 
   return (
     <div className="card h-full flex flex-col">
@@ -81,6 +87,7 @@ export function Funnel({ stages, metric }: FunnelProps) {
             maxValue={maxValue}
             isCliff={index === cliffIndex}
             previousValue={index > 0 ? stages[index - 1].value : null}
+            gmvLoss={index === cliffIndex ? gmvLoss : undefined}
           />
         ))}
       </div>

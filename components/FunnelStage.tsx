@@ -9,9 +9,10 @@ interface FunnelStageProps {
   maxValue: number;
   isCliff: boolean;
   previousValue: number | null;
+  gmvLoss?: number;  // GMV lost at this stage (only for cliff)
 }
 
-export function FunnelStage({ stage, metric, maxValue, isCliff, previousValue }: FunnelStageProps) {
+export function FunnelStage({ stage, metric, maxValue, isCliff, previousValue, gmvLoss }: FunnelStageProps) {
   const totalWidthPercent = maxValue > 0 ? (stage.value / maxValue) * 100 : 0;
 
   const formattedValue = metric === 'gmv' ? formatEuro(stage.value) : formatNumber(stage.value);
@@ -129,6 +130,12 @@ export function FunnelStage({ stage, metric, maxValue, isCliff, previousValue }:
             <p className="text-label mt-0.5" style={{ color: '#f44336' }}>
               Activation cliff
             </p>
+            {/* GMV loss - always shown */}
+            {gmvLoss !== undefined && gmvLoss > 0 && (
+              <p className="text-xs font-medium mt-1" style={{ color: '#b91c1c' }}>
+                ~{formatEuro(gmvLoss)}/mo leak
+              </p>
+            )}
           </div>
           <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2">
             <div
