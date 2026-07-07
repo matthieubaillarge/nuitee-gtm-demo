@@ -103,7 +103,7 @@ Five stages, in order:
 | 1 | `sandbox_call` | Sandbox Call | healthy | ~92% |
 | 2 | `production_call` | Production Call | **the cliff** | ~45% |
 | 3 | `production_booking` | Production Booking | recovering | ~70% |
-| 4 | `sustained_volume` | Sustained Volume | goal | ~64% |
+| 4 | `sustained_volume` | Sustained Revenue | goal | ~64% |
 
 - Render as **horizontal stacked bars**, width proportional to the current metric value (count or monthly GMV) for the current segment selection. Each bar is composed of three colored segments showing the **ICP breakdown** (Indie in yellow, Startups in blue, Enterprise in green). This visualization shows how the segment composition shifts as accounts progress through the funnel.
 - **Cliff highlighting:** the drop into stage 2 (Production Call) is always highlighted with a red ring and annotation callout. This is hardcoded, not dynamically calculated, because the Sandbox → Production Call drop (~45%) is THE thesis of the demo: most accounts test the sandbox but never ship to production.

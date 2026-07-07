@@ -57,7 +57,7 @@ account_stages AS (
     *,
     -- Determine furthest stage (0-4)
     CASE
-      WHEN bookings_last_30d >= 3 THEN 4  -- Sustained Volume
+      WHEN bookings_last_30d >= 3 THEN 4  -- Sustained Revenue
       WHEN has_production_booking = 1 THEN 3  -- Production Booking
       WHEN has_production_call = 1 THEN 2  -- Production Call
       WHEN has_sandbox_call = 1 THEN 1  -- Sandbox Call
@@ -119,7 +119,7 @@ funnel_counts AS (
     SELECT 1, 'Sandbox Call' UNION ALL
     SELECT 2, 'Production Call' UNION ALL
     SELECT 3, 'Production Booking' UNION ALL
-    SELECT 4, 'Sustained Volume'
+    SELECT 4, 'Sustained Revenue'
   ) s
   CROSS JOIN account_stages a
   GROUP BY s.stage_index, s.stage_label

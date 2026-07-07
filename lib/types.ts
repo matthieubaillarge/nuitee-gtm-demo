@@ -64,7 +64,7 @@ export const STAGE_LABELS: Record<StageIndex, string> = {
   1: 'Sandbox Call',
   2: 'Production Call',
   3: 'Production Booking',
-  4: 'Sustained Volume',
+  4: 'Sustained Revenue',
 };
 
 export const SEGMENT_LABELS: Record<Segment, string> = {

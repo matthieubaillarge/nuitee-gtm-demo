@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Funnel } from '@/components/Funnel';
-import { TriggerLayer } from '@/components/TriggerLayer';
+import { Recommendations } from '@/components/Recommendations';
 import { SQLPanel } from '@/components/SQLPanel';
-import { SEED_ACCOUNTS, getFunnelValues, getTriggerCounts } from '@/lib/data';
+import { SEED_ACCOUNTS, getFunnelValues } from '@/lib/data';
 import { Metric, Segment } from '@/lib/types';
 
 export default function Home() {
@@ -16,7 +16,6 @@ export default function Home() {
   const funnelStages = getFunnelValues(SEED_ACCOUNTS, metric, segment);
   // Always compute GMV stages for the cliff annotation (shows €X lost even in count mode)
   const gmvStages = getFunnelValues(SEED_ACCOUNTS, 'gmv', segment);
-  const triggerRules = getTriggerCounts(SEED_ACCOUNTS, segment);
 
   return (
     <div className="flex flex-col min-h-screen" style={{ backgroundColor: 'white' }}>
@@ -37,7 +36,7 @@ export default function Home() {
             style={{ minHeight: 'calc(100vh - 180px)' }}
           >
             <Funnel stages={funnelStages} gmvStages={gmvStages} metric={metric} />
-            <TriggerLayer rules={triggerRules} />
+            <Recommendations />
           </div>
         </div>
       </main>

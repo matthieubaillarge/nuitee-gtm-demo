@@ -11,7 +11,7 @@ import { Account, Segment, Metric, StageIndex, StageData, TriggerRule, STAGE_LAB
 // Stage 1 (Sandbox Call): 44 total (92% from 0)
 // Stage 2 (Production Call): 20 total (45% from 1) ← THE CLIFF
 // Stage 3 (Production Booking): 14 total (70% from 2)
-// Stage 4 (Sustained Volume): 9 total (64% from 3)
+// Stage 4 (Sustained Revenue): 9 total (64% from 3)
 
 function generateAccounts(): Account[] {
   const accounts: Account[] = [];
@@ -25,7 +25,7 @@ function generateAccounts(): Account[] {
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 18 at Sandbox Call
     2, 2, 2, // 3 at Production Call
     3, 3, 3, // 3 at Production Booking
-    4, 4, 4, 4, // 4 at Sustained Volume
+    4, 4, 4, 4, // 4 at Sustained Revenue
   ];
 
   indieStages.forEach((stage) => {
@@ -48,7 +48,7 @@ function generateAccounts(): Account[] {
     1, 1, 1, 1, // 4 at Sandbox Call
     2, 2, // 2 at Production Call
     3, 3, // 2 at Production Booking
-    4, 4, 4, // 3 at Sustained Volume
+    4, 4, 4, // 3 at Sustained Revenue
   ];
 
   fundedStages.forEach((stage) => {
@@ -71,7 +71,7 @@ function generateAccounts(): Account[] {
     1, 1, // 2 at Sandbox Call
     2, // 1 at Production Call
     // 0 at Production Booking (they all go straight to sustained)
-    4, 4, // 2 at Sustained Volume
+    4, 4, // 2 at Sustained Revenue
   ];
 
   enterpriseStages.forEach((stage) => {

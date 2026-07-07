@@ -46,7 +46,7 @@ const SQL_SECTIONS: SQLSection[] = [
 account_stages AS (
   SELECT *,
     CASE
-      WHEN bookings_last_30d >= 3 THEN 4  -- Sustained Volume
+      WHEN bookings_last_30d >= 3 THEN 4  -- Sustained Revenue
       WHEN has_production_booking = 1 THEN 3
       WHEN has_production_call = 1 THEN 2
       WHEN has_sandbox_call = 1 THEN 1
