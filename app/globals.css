@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Connect Design Tokens */
+
+  /* Primary palette */
+  --primary-50: #f0f1fa;
+  --primary-100: #d4d7ed;
+  --primary-200: #b9bedf;
+  --primary-300: #969dcf;
+  --primary-400: #7a83c2;
+  --primary-500: #505AAC;
+  --primary-600: #505AAC;
+  --primary-700: #47509a;
+  --primary-800: #443c8c;
+  --primary-900: #2d3362;
+
+  /* Semantic colors */
+  --color-red: #f44336;
+  --color-orange: #fa8900;
+  --color-yellow: #ffb300;
+  --color-green: #4caf50;
+  --color-cyan: #00bcd4;
+  --color-blue: #2196f3;
+  --color-violet: #673ab7;
+
+  /* UI Colors */
+  --bg-page: #ffffff;
+  --bg-card: #ffffff;
+  --border-card: #EDF0F6;
+  --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+  /* Text Colors */
+  --text-heading: rgb(25, 23, 44);
+  --text-label: rgb(100, 116, 139);
+  --text-number: #000000;
+
+  /* System */
+  --background: var(--bg-page);
+  --foreground: var(--text-heading);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-onest);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Using Onest as closest alternative to Lota Grotesque Alt 3 */
+  font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+.text-h1 {
+  font-weight: 600;
+  color: rgb(25, 23, 44);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-h2 {
+  font-weight: 600;
+  color: rgb(25, 23, 44);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-subtitle {
+  font-weight: 400;
+  color: rgb(100, 116, 139);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-label {
+  font-weight: 500;
+  color: rgb(100, 116, 139);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-number {
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Card - Connect style */
+.card {
+  background: white;
+  border: 1px solid rgba(229, 233, 240, 0.6); /* hsl(214.3, 31.8%, 91.4%) at 60% */
+  border-radius: 0.5rem; /* 8px */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-400 {
+  transition-duration: 400ms;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
 }

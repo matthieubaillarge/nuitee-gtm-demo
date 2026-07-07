@@ -1,0 +1,1449 @@
+White card: 
+lement.style {
+}
+.shadow-sm {
+    --tw-shadow: 0 1px 2px 0 #0000000d;
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.text-card-foreground {
+    color: hsl(var(--card-foreground));
+}
+.bg-card {
+    background-color: hsl(var(--card));
+}
+.border-border\/60 {
+    border-color: hsl(var(--border) / .6);
+}
+.border {
+    border-width: 1px;
+}
+.rounded-lg {
+    border-radius: var(--radius);
+}
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.space-y-5>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+style attribute {
+    cursor: default;
+}
+body[style] {
+    font-family: var(--font-primary) !important;
+    margin: 0 !important;
+}
+body {
+    background-color: #fff;
+    background-color: var(--rs-body);
+    color: var(--rs-text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, STXihei, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+<style>
+body {
+    margin: 0px;
+    color: rgba(58, 53, 65, 0.87);
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    background-color: rgb(244, 245, 250);
+}
+html, body {
+    min-height: 100%;
+    font-family: var(--font-primary) !important;
+    background-color: #fff !important;
+    margin: 0 !important;
+}
+body {
+    line-height: inherit;
+    margin: 0;
+}
+*, :before, :after, ::backdrop {
+style attribute {
+    --primary: 233 37% 49%;
+    --ring: 233 37% 49%;
+    --color-primary: #505AAC;
+    --primary-50: #f0f1fa;
+    --primary-100: #d4d7ed;
+    --primary-200: #b9bedf;
+    --primary-300: #969dcf;
+    --primary-400: #7a83c2;
+    --primary-500: #505AAC;
+    --primary-600: #505AAC;
+    --primary-700: #47509a;
+    --primary-800: #3a427e;
+    --primary-900: #2d3362;
+}
+:root {
+    --rs-anim-fade-duration: .15s;
+    --rs-anim-collapse-duration: .35s;
+}
+.rs-theme-light, :root {
+    --rs-gray-0: #fff;
+    --rs-gray-50: #f7f7fa;
+    --rs-gray-100: #f2f2f5;
+    --rs-gray-200: #e5e5ea;
+    --rs-gray-300: #d9d9d9;
+    --rs-gray-400: #b6b7b8;
+    --rs-gray-500: #939393;
+    --rs-gray-600: #717273;
+    --rs-gray-700: #575757;
+    --rs-gray-800: #343434;
+    --rs-gray-900: #121212;
+    --rs-primary-50: #f2faff;
+    --rs-primary-100: #cce9ff;
+    --rs-primary-200: #a6d7ff;
+    --rs-primary-300: #80c4ff;
+    --rs-primary-400: #59afff;
+    --rs-primary-500: #3498ff;
+    --rs-primary-600: #2589f5;
+    --rs-primary-700: #1675e0;
+    --rs-primary-800: #0a5dc2;
+    --rs-primary-900: #004299;
+    --rs-color-red: #f44336;
+    --rs-color-orange: #fa8900;
+    --rs-color-yellow: #ffb300;
+    --rs-color-green: #4caf50;
+    --rs-color-cyan: #00bcd4;
+    --rs-color-blue: #2196f3;
+    --rs-color-violet: #673ab7;
+    --rs-red-50: #fff2f2;
+    --rs-red-100: #fccfcf;
+    --rs-red-200: #faa9a7;
+    --rs-red-300: #fa8682;
+    --rs-red-400: #f7635c;
+    --rs-red-500: #f44336;
+    --rs-red-600: #eb3626;
+    --rs-red-700: #d62915;
+    --rs-red-800: #b81c07;
+    --rs-red-900: #8f1300;
+    --rs-orange-50: #fff8f2;
+    --rs-orange-100: #ffdfc2;
+    --rs-orange-200: #fcc690;
+    --rs-orange-300: #fcb160;
+    --rs-orange-400: #fa9b2f;
+    --rs-orange-500: #fa8900;
+    --rs-orange-600: #f08800;
+    --rs-orange-700: #db8000;
+    --rs-orange-800: #bd7100;
+    --rs-orange-900: #945b00;
+    --rs-yellow-50: #fffaf2;
+    --rs-yellow-100: #ffe9c2;
+Show all properties (328 more)
+}
+:root, .rs-theme-light {
+Show all properties (88 more)
+:root {
+    --font-primary: "Lota Grotesque Alt 3", sans-serif;
+    --font-secondary: "JetBrains Mono", monospace;
+    --primary-50: #f2f0ff;
+    --primary-100: #d6d2ff;
+    --primary-200: #c2bcff;
+    --primary-300: #a79dff;
+    --primary-400: #958aff;
+    --primary-500: #505aac;
+    --primary-600: #505aac;
+    --primary-700: #574db5;
+    --primary-800: #443c8c;
+    --primary-900: #342e6b;
+    --neutral-white: #fff;
+    --neutral-1: #fdfdfd;
+    --neutral-2: #f6f6f7;
+    --neutral-3: #f1f1f2;
+    --neutral-4: #dddcdf;
+    --neutral-5: #c6c5ca;
+    --neutral-6: #9897a0;
+    --neutral-7: #6a6876;
+    --neutral-8: #575665;
+    --neutral-9: #3c3a4c;
+    --neutral-10: #353345;
+    --neutral-11: #2b2a3d;
+    --neutral-12: #19172c;
+    --color-primary: #505aac;
+    --color-neutral-white: #fff;
+    --color-neutral-2: #f6f6f7;
+    --color-neutral-3: #f1f1f2;
+    --color-neutral-4: #dddcdf;
+    --color-neutral-5: #c6c5ca;
+    --color-neutral-6: #9897a0;
+    --color-neutral-7: #696876;
+    --color-neutral-8: #585665;
+    --color-neutral-9: #3c3a4c;
+    --color-neutral-10: #353345;
+    --color-neutral-11: #2b2a3d;
+    --color-neutral-12: #19172c;
+    --color-neutral-13: #fdfdfd;
+    --color-neutral-14: #fdfdfd;
+}
+:root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 230 50% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 230 50% 50%;
+    --radius: .5rem;
+}
+html {
+    -webkit-tap-highlight-color: #0000;
+}
+<style>
+html {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+}
+html, :host {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5;
+}
+*, :before, :after, ::backdrop {
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+<style>
+@font-face {
+    font-family: "Lota Grotesque Alt 3";
+    src: url(/fonts/LosAndesLotaGrotesqueAlt3Regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+Colord card: 
+element.style {
+}
+.p-3\.5 {
+    padding: .875rem;
+}
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.shadow-sm {
+    --tw-shadow: 0 1px 2px 0 #0000000d;
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.text-card-foreground {
+    color: hsl(var(--card-foreground));
+}
+.border-emerald-200 {
+    --tw-border-opacity: 1;
+    border-color: rgb(167 243 208 / var(--tw-border-opacity));
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+*, :before, :after, ::backdrop {
+.space-y-3>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(.75rem * var(--tw-space-y-reverse));
+}
+*, :before, :after, ::backdrop {
+.space-y-5>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+style attribute {
+    cursor: default;
+}
+body[style] {
+    font-family: var(--font-primary) !important;
+    margin: 0 !important;
+}
+body {
+    background-color: #fff;
+    background-color: var(--rs-body);
+    color: var(--rs-text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, STXihei, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+<style>
+body {
+    margin: 0px;
+    color: rgba(58, 53, 65, 0.87);
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    background-color: rgb(244, 245, 250);
+}
+html, body {
+    min-height: 100%;
+    font-family: var(--font-primary) !important;
+    background-color: #fff !important;
+    margin: 0 !important;
+}
+body {
+    line-height: inherit;
+    margin: 0;
+}
+*, :before, :after, ::backdrop {
+style attribute {
+    --primary: 233 37% 49%;
+    --ring: 233 37% 49%;
+    --color-primary: #505AAC;
+    --primary-50: #f0f1fa;
+    --primary-100: #d4d7ed;
+    --primary-200: #b9bedf;
+    --primary-300: #969dcf;
+    --primary-400: #7a83c2;
+    --primary-500: #505AAC;
+    --primary-600: #505AAC;
+    --primary-700: #47509a;
+    --primary-800: #3a427e;
+    --primary-900: #2d3362;
+}
+:root {
+    --rs-anim-fade-duration: .15s;
+    --rs-anim-collapse-duration: .35s;
+}
+.rs-theme-light, :root {
+    --rs-gray-0: #fff;
+    --rs-gray-50: #f7f7fa;
+    --rs-gray-100: #f2f2f5;
+    --rs-gray-200: #e5e5ea;
+    --rs-gray-300: #d9d9d9;
+    --rs-gray-400: #b6b7b8;
+    --rs-gray-500: #939393;
+    --rs-gray-600: #717273;
+    --rs-gray-700: #575757;
+    --rs-gray-800: #343434;
+    --rs-gray-900: #121212;
+    --rs-primary-50: #f2faff;
+    --rs-primary-100: #cce9ff;
+    --rs-primary-200: #a6d7ff;
+    --rs-primary-300: #80c4ff;
+    --rs-primary-400: #59afff;
+    --rs-primary-500: #3498ff;
+    --rs-primary-600: #2589f5;
+    --rs-primary-700: #1675e0;
+    --rs-primary-800: #0a5dc2;
+    --rs-primary-900: #004299;
+    --rs-color-red: #f44336;
+    --rs-color-orange: #fa8900;
+    --rs-color-yellow: #ffb300;
+    --rs-color-green: #4caf50;
+    --rs-color-cyan: #00bcd4;
+    --rs-color-blue: #2196f3;
+    --rs-color-violet: #673ab7;
+    --rs-red-50: #fff2f2;
+    --rs-red-100: #fccfcf;
+    --rs-red-200: #faa9a7;
+    --rs-red-300: #fa8682;
+    --rs-red-400: #f7635c;
+    --rs-red-500: #f44336;
+    --rs-red-600: #eb3626;
+    --rs-red-700: #d62915;
+    --rs-red-800: #b81c07;
+    --rs-red-900: #8f1300;
+    --rs-orange-50: #fff8f2;
+    --rs-orange-100: #ffdfc2;
+    --rs-orange-200: #fcc690;
+    --rs-orange-300: #fcb160;
+    --rs-orange-400: #fa9b2f;
+    --rs-orange-500: #fa8900;
+    --rs-orange-600: #f08800;
+    --rs-orange-700: #db8000;
+    --rs-orange-800: #bd7100;
+    --rs-orange-900: #945b00;
+    --rs-yellow-50: #fffaf2;
+    --rs-yellow-100: #ffe9c2;
+Show all properties (328 more)
+}
+:root, .rs-theme-light {
+Show all properties (88 more)
+:root {
+    --font-primary: "Lota Grotesque Alt 3", sans-serif;
+    --font-secondary: "JetBrains Mono", monospace;
+    --primary-50: #f2f0ff;
+    --primary-100: #d6d2ff;
+    --primary-200: #c2bcff;
+    --primary-300: #a79dff;
+    --primary-400: #958aff;
+    --primary-500: #505aac;
+    --primary-600: #505aac;
+    --primary-700: #574db5;
+    --primary-800: #443c8c;
+    --primary-900: #342e6b;
+    --neutral-white: #fff;
+    --neutral-1: #fdfdfd;
+    --neutral-2: #f6f6f7;
+    --neutral-3: #f1f1f2;
+    --neutral-4: #dddcdf;
+    --neutral-5: #c6c5ca;
+    --neutral-6: #9897a0;
+    --neutral-7: #6a6876;
+    --neutral-8: #575665;
+    --neutral-9: #3c3a4c;
+    --neutral-10: #353345;
+    --neutral-11: #2b2a3d;
+    --neutral-12: #19172c;
+    --color-primary: #505aac;
+    --color-neutral-white: #fff;
+    --color-neutral-2: #f6f6f7;
+    --color-neutral-3: #f1f1f2;
+    --color-neutral-4: #dddcdf;
+    --color-neutral-5: #c6c5ca;
+    --color-neutral-6: #9897a0;
+    --color-neutral-7: #696876;
+    --color-neutral-8: #585665;
+    --color-neutral-9: #3c3a4c;
+    --color-neutral-10: #353345;
+    --color-neutral-11: #2b2a3d;
+    --color-neutral-12: #19172c;
+    --color-neutral-13: #fdfdfd;
+    --color-neutral-14: #fdfdfd;
+}
+:root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 230 50% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 230 50% 50%;
+    --radius: .5rem;
+}
+html {
+    -webkit-tap-highlight-color: #0000;
+}
+<style>
+html {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+}
+html, :host {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5;
+}
+*, :before, :after, ::backdrop {
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+<style>
+@font-face {
+    font-family: "Lota Grotesque Alt 3";
+    src: url(/fonts/LosAndesLotaGrotesqueAlt3Regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+Navbar items: 
+element.style {
+}
+@media (min-width: 640px) {
+    .sm\:px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+.px-4 {
+.overflow-visible {
+    overflow: visible;
+}
+.gap-2 {
+    gap: .5rem;
+}
+.items-center {
+    align-items: center;
+}
+.min-w-0 {
+    min-width: 0;
+}
+.w-full {
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+<style>
+.css-14z4mo {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    left: auto;
+    right: 0px;
+    transition: box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    color: rgba(58, 53, 65, 0.87);
+    min-height: 66px;
+    position: sticky;
+    top: 0px;
+    z-index: 1100;
+    box-shadow: none;
+}
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+*, :before, :after, ::backdrop {
+style attribute {
+    cursor: default;
+}
+body[style] {
+    font-family: var(--font-primary) !important;
+    margin: 0 !important;
+}
+body {
+    background-color: #fff;
+    background-color: var(--rs-body);
+    color: var(--rs-text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, STXihei, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+<style>
+body {
+    margin: 0px;
+    color: rgba(58, 53, 65, 0.87);
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    background-color: rgb(244, 245, 250);
+}
+html, body {
+    min-height: 100%;
+    font-family: var(--font-primary) !important;
+    background-color: #fff !important;
+    margin: 0 !important;
+}
+body {
+    line-height: inherit;
+    margin: 0;
+}
+*, :before, :after, ::backdrop {
+style attribute {
+    --primary: 233 37% 49%;
+    --ring: 233 37% 49%;
+    --color-primary: #505AAC;
+    --primary-50: #f0f1fa;
+    --primary-100: #d4d7ed;
+    --primary-200: #b9bedf;
+    --primary-300: #969dcf;
+    --primary-400: #7a83c2;
+    --primary-500: #505AAC;
+    --primary-600: #505AAC;
+    --primary-700: #47509a;
+    --primary-800: #3a427e;
+    --primary-900: #2d3362;
+}
+:root {
+    --rs-anim-fade-duration: .15s;
+    --rs-anim-collapse-duration: .35s;
+}
+.rs-theme-light, :root {
+    --rs-gray-0: #fff;
+    --rs-gray-50: #f7f7fa;
+    --rs-gray-100: #f2f2f5;
+    --rs-gray-200: #e5e5ea;
+    --rs-gray-300: #d9d9d9;
+    --rs-gray-400: #b6b7b8;
+    --rs-gray-500: #939393;
+    --rs-gray-600: #717273;
+    --rs-gray-700: #575757;
+    --rs-gray-800: #343434;
+    --rs-gray-900: #121212;
+    --rs-primary-50: #f2faff;
+    --rs-primary-100: #cce9ff;
+    --rs-primary-200: #a6d7ff;
+    --rs-primary-300: #80c4ff;
+    --rs-primary-400: #59afff;
+    --rs-primary-500: #3498ff;
+    --rs-primary-600: #2589f5;
+    --rs-primary-700: #1675e0;
+    --rs-primary-800: #0a5dc2;
+    --rs-primary-900: #004299;
+    --rs-color-red: #f44336;
+    --rs-color-orange: #fa8900;
+    --rs-color-yellow: #ffb300;
+    --rs-color-green: #4caf50;
+    --rs-color-cyan: #00bcd4;
+    --rs-color-blue: #2196f3;
+    --rs-color-violet: #673ab7;
+    --rs-red-50: #fff2f2;
+    --rs-red-100: #fccfcf;
+    --rs-red-200: #faa9a7;
+    --rs-red-300: #fa8682;
+    --rs-red-400: #f7635c;
+    --rs-red-500: #f44336;
+    --rs-red-600: #eb3626;
+    --rs-red-700: #d62915;
+    --rs-red-800: #b81c07;
+    --rs-red-900: #8f1300;
+    --rs-orange-50: #fff8f2;
+    --rs-orange-100: #ffdfc2;
+    --rs-orange-200: #fcc690;
+    --rs-orange-300: #fcb160;
+    --rs-orange-400: #fa9b2f;
+    --rs-orange-500: #fa8900;
+    --rs-orange-600: #f08800;
+    --rs-orange-700: #db8000;
+    --rs-orange-800: #bd7100;
+    --rs-orange-900: #945b00;
+    --rs-yellow-50: #fffaf2;
+    --rs-yellow-100: #ffe9c2;
+Show all properties (328 more)
+}
+:root, .rs-theme-light {
+Show all properties (88 more)
+:root {
+    --font-primary: "Lota Grotesque Alt 3", sans-serif;
+    --font-secondary: "JetBrains Mono", monospace;
+    --primary-50: #f2f0ff;
+    --primary-100: #d6d2ff;
+    --primary-200: #c2bcff;
+    --primary-300: #a79dff;
+    --primary-400: #958aff;
+    --primary-500: #505aac;
+    --primary-600: #505aac;
+    --primary-700: #574db5;
+    --primary-800: #443c8c;
+    --primary-900: #342e6b;
+    --neutral-white: #fff;
+    --neutral-1: #fdfdfd;
+    --neutral-2: #f6f6f7;
+    --neutral-3: #f1f1f2;
+    --neutral-4: #dddcdf;
+    --neutral-5: #c6c5ca;
+    --neutral-6: #9897a0;
+    --neutral-7: #6a6876;
+    --neutral-8: #575665;
+    --neutral-9: #3c3a4c;
+    --neutral-10: #353345;
+    --neutral-11: #2b2a3d;
+    --neutral-12: #19172c;
+    --color-primary: #505aac;
+    --color-neutral-white: #fff;
+    --color-neutral-2: #f6f6f7;
+    --color-neutral-3: #f1f1f2;
+    --color-neutral-4: #dddcdf;
+    --color-neutral-5: #c6c5ca;
+    --color-neutral-6: #9897a0;
+    --color-neutral-7: #696876;
+    --color-neutral-8: #585665;
+    --color-neutral-9: #3c3a4c;
+    --color-neutral-10: #353345;
+    --color-neutral-11: #2b2a3d;
+    --color-neutral-12: #19172c;
+    --color-neutral-13: #fdfdfd;
+    --color-neutral-14: #fdfdfd;
+}
+:root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 230 50% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 230 50% 50%;
+    --radius: .5rem;
+}
+html {
+    -webkit-tap-highlight-color: #0000;
+}
+<style>
+html {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+}
+html, :host {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5;
+}
+*, :before, :after, ::backdrop {
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+*, :before, :after, ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+<style>
+@font-face {
+    font-family: "Lota Grotesque Alt 3";
+    src: url(/fonts/LosAndesLotaGrotesqueAlt3Regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
