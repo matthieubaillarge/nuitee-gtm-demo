@@ -4,12 +4,14 @@ import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Funnel } from '@/components/Funnel';
 import { TriggerLayer } from '@/components/TriggerLayer';
+import { SQLPanel } from '@/components/SQLPanel';
 import { SEED_ACCOUNTS, getFunnelValues, getTriggerCounts } from '@/lib/data';
 import { Metric, Segment } from '@/lib/types';
 
 export default function Home() {
   const [metric, setMetric] = useState<Metric>('count');
   const [segment, setSegment] = useState<Segment>('all');
+  const [sqlPanelOpen, setSqlPanelOpen] = useState(false);
 
   const funnelStages = getFunnelValues(SEED_ACCOUNTS, metric, segment);
   // Always compute GMV stages for the cliff annotation (shows €X lost even in count mode)
@@ -23,7 +25,10 @@ export default function Home() {
         segment={segment}
         onMetricChange={setMetric}
         onSegmentChange={setSegment}
+        onSQLClick={() => setSqlPanelOpen(true)}
       />
+
+      <SQLPanel isOpen={sqlPanelOpen} onClose={() => setSqlPanelOpen(false)} />
 
       <main className="flex-1 p-6">
         <div className="max-w-7xl mx-auto">

@@ -8,9 +8,10 @@ interface HeaderProps {
   segment: Segment;
   onMetricChange: (metric: Metric) => void;
   onSegmentChange: (segment: Segment) => void;
+  onSQLClick: () => void;
 }
 
-export function Header({ metric, segment, onMetricChange, onSegmentChange }: HeaderProps) {
+export function Header({ metric, segment, onMetricChange, onSegmentChange, onSQLClick }: HeaderProps) {
   const segments: Segment[] = ['all', 'indie', 'funded_ota', 'enterprise'];
 
   return (
@@ -94,6 +95,31 @@ export function Header({ metric, segment, onMetricChange, onSegmentChange }: Hea
               ))}
             </select>
           </div>
+
+          {/* SQL Button */}
+          <button
+            onClick={onSQLClick}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-lg transition-all hover:bg-gray-100"
+            style={{
+              border: '1px solid rgba(229, 233, 240, 0.6)',
+              color: 'rgb(68, 61, 141)',
+            }}
+          >
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+              />
+            </svg>
+            SQL
+          </button>
 
           {/* Demo indicator */}
           <div
