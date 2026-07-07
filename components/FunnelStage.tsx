@@ -49,13 +49,8 @@ export function FunnelStage({ stage, metric, maxValue, isCliff, previousValue, g
           >
             {/* Stacked bar segments */}
             <div
-              className={`h-full flex transition-all duration-400 ease-out rounded-lg overflow-hidden ${
-                isCliff ? 'ring-2 ring-offset-1' : ''
-              }`}
-              style={{
-                width: `${totalWidthPercent}%`,
-                ...(isCliff && { '--tw-ring-color': '#f44336' } as React.CSSProperties),
-              }}
+              className="h-full flex transition-all duration-400 ease-out rounded-lg overflow-hidden"
+              style={{ width: `${totalWidthPercent}%` }}
             >
               {segments.map((seg) => {
                 const segPercent = total > 0 ? (seg.value / total) * 100 : 0;
