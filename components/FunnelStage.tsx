@@ -68,15 +68,9 @@ export function FunnelStage({ stage, metric, maxValue, isCliff, previousValue, g
               })}
             </div>
 
-            {/* Value label - black text, transparent bg */}
+            {/* Value label - black text, always left-aligned */}
             <div className="absolute inset-0 flex items-center px-4">
-              <span
-                className="text-lg font-semibold"
-                style={{
-                  color: totalWidthPercent > 20 ? '#000000' : '#000000',
-                  marginLeft: totalWidthPercent > 20 ? 0 : 'auto',
-                }}
-              >
+              <span className="text-lg font-semibold" style={{ color: '#000000' }}>
                 {formattedValue}
               </span>
             </div>
