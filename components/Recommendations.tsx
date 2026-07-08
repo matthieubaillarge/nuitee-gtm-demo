@@ -12,7 +12,7 @@ const RECOMMENDATIONS: Recommendation[] = [
   {
     id: '1',
     title: 'Focus on Time-To-Production',
-    description: 'North-star metric. Developer activation motion, not sales. Speed and friction removal.',
+    description: 'North-star metric. Developer activation motion. Speed and friction removal.',
   },
   {
     id: '2',
