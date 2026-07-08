@@ -6,26 +6,31 @@ import { Account, Segment, Metric, StageIndex, StageData, TriggerRule, STAGE_LAB
 // Funded OTA: 12 accounts, ~€60,000/month avg
 // Enterprise: 6 accounts, ~€400,000/month avg
 //
-// New conversion rates (cliff at stage 1→2, the Sandbox→Production drop):
-// Stage 0 (API Key): 48 total
-// Stage 1 (Sandbox Call): 44 total (92% from 0)
-// Stage 2 (Production Call): 20 total (45% from 1) ← THE CLIFF
-// Stage 3 (Production Booking): 14 total (70% from 2)
-// Stage 4 (Sustained Revenue): 9 total (64% from 3)
+// SEGMENT-SPECIFIC CONVERSION PATTERNS:
+//
+// INDIE: Easy to get to Production (curiosity, low friction)
+//        But BIG DROP at Booking & Sustained (most never ship)
+//        Cumulative: 30 → 28 (93%) → 18 (64%) → 5 (28%) → 2 (40%)
+//
+// FUNDED/ENTERPRISE: Big cliff at Sandbox → Production (decision point)
+//        But once there, HIGH conversion (invested, committed)
+//        Funded: 12 → 11 (92%) → 4 (36%) → 3 (75%) → 3 (100%)
+//        Enterprise: 6 → 5 (83%) → 2 (40%) → 2 (100%) → 2 (100%)
 
 function generateAccounts(): Account[] {
   const accounts: Account[] = [];
   let id = 1;
 
   // Indies: 30 accounts
-  // Cumulative: 30 at stage 0+, 28 at stage 1+, 10 at stage 2+, 7 at stage 3+, 4 at stage 4
-  // Per-stage: 2 at 0, 18 at 1, 3 at 2, 3 at 3, 4 at 4
+  // Easy to Production, but drop off after (most never book/sustain)
+  // Cumulative: 30 → 28 (93%) → 18 (64%) → 5 (28%) → 2 (40%)
+  // Per-stage: 2, 10, 13, 3, 2
   const indieStages: StageIndex[] = [
     0, 0, // 2 at API Key only
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 18 at Sandbox Call
-    2, 2, 2, // 3 at Production Call
-    3, 3, 3, // 3 at Production Booking
-    4, 4, 4, 4, // 4 at Sustained Revenue
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 10 at Sandbox Call
+    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, // 13 at Production Call (easy to get here)
+    3, 3, 3, // 3 at Production Booking (most drop here)
+    4, 4, // 2 at Sustained Revenue (few sustain)
   ];
 
   indieStages.forEach((stage) => {
@@ -41,14 +46,15 @@ function generateAccounts(): Account[] {
   });
 
   // Funded OTAs: 12 accounts
-  // Cumulative: 12 at stage 0+, 11 at stage 1+, 7 at stage 2+, 5 at stage 3+, 3 at stage 4
-  // Per-stage: 1 at 0, 4 at 1, 2 at 2, 2 at 3, 3 at 4
+  // Big cliff at Sandbox → Production, but commit after
+  // Cumulative: 12 → 11 (92%) → 4 (36%) → 3 (75%) → 3 (100%)
+  // Per-stage: 1, 7, 1, 0, 3
   const fundedStages: StageIndex[] = [
     0, // 1 at API Key only
-    1, 1, 1, 1, // 4 at Sandbox Call
-    2, 2, // 2 at Production Call
-    3, 3, // 2 at Production Booking
-    4, 4, 4, // 3 at Sustained Revenue
+    1, 1, 1, 1, 1, 1, 1, // 7 at Sandbox Call (THE CLIFF - most stall here)
+    2, // 1 at Production Call
+    // 0 at Production Booking (once in production, they push through)
+    4, 4, 4, // 3 at Sustained Revenue (committed)
   ];
 
   fundedStages.forEach((stage) => {
@@ -64,14 +70,16 @@ function generateAccounts(): Account[] {
   });
 
   // Enterprise: 6 accounts
-  // Cumulative: 6 at stage 0+, 5 at stage 1+, 3 at stage 2+, 2 at stage 3+, 2 at stage 4
-  // Per-stage: 1 at 0, 2 at 1, 1 at 2, 0 at 3, 2 at 4
+  // Big cliff at Sandbox → Production (approval processes)
+  // But once there, very high conversion (serious investment)
+  // Cumulative: 6 → 5 (83%) → 2 (40%) → 2 (100%) → 2 (100%)
+  // Per-stage: 1, 3, 0, 0, 2
   const enterpriseStages: StageIndex[] = [
     0, // 1 at API Key only
-    1, 1, // 2 at Sandbox Call
-    2, // 1 at Production Call
-    // 0 at Production Booking (they all go straight to sustained)
-    4, 4, // 2 at Sustained Revenue
+    1, 1, 1, // 3 at Sandbox Call (THE CLIFF - approval processes)
+    // 0 at Production Call (once approved, they go all the way)
+    // 0 at Production Booking
+    4, 4, // 2 at Sustained Revenue (fully committed)
   ];
 
   enterpriseStages.forEach((stage) => {
