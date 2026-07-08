@@ -93,3 +93,33 @@ Add a sortable table, sorted by impact descending. Columns: Recommendation, Leak
 | Build developer credibility (RapidAPI, GitHub, directories) | Interest to sandbox | Indie, Funded | Medium | Medium |
 
 Design note: keep it visually consistent with the rest of the dashboard, and make impact a colored tag so the eye lands on the High rows first. This view is what you point at when you say the word "prioritize," so it should read in two seconds.
+
+
+# MY version of the script
+Ok Gian, 
+I’ve built this to help me answer the case study. This is how I picture nuitée’s funnel at the moment. 
+
+It is divided in 5 stages from first signup and obtention of your API key and sandbox access to becoming an Active Customer who generate recurring bookings and revenue. 
+
+I presume you currently have a mix of different Customer Profiles, spread through a classic distribution. But what matters to us isn’t the quantity but their value, that’s why it’s important to focus on Value. Here I chose Gross Merchant Value as a unit of measure. And as we can see here, and as I imagine your already do, is to focus on the upper half of the mix: funded companies, startups, enterprise, superapps, etc. 
+
+Btw, I built all this in about 1h with Claude Code, I will send your the link. And as you can see here I have also included the SQL queries that would be used to pull that data from a data warehouse like BigQuery. Now, I want to be transparent, I’m learning SQL, but I’m able to generate production ready complex SQL queries with help from Claude. 
+
+Ok, back to the analysis. 
+
+Now, if we look into each segment, I highlighted where I think is your current bottleneck, where I presume you are leaking devs, accounts and ultimately revenue. And that stage is between Performing the first sandbox Call (Testing) and getting to an actual Live solution.  Why? Because this is where you have the most Frictions: this is where the dev has to figure out if the API is really doing what they are looking for, if it works as aintended, if they can properly work with it, this is where they will face implementation challenges, maybe errors, bugs, etc. But this is also where external challenges come at play: how urgent is their project, how mature it is, how big it? Do they have the resources needed to go through it. Do they have to convince their team, their boss, etc. So not only the user is facing internal/technical challenges here but they are likely facing external challenges as well. 
+
+But it also means that once that bottleneck is overcome, once the user is in Production, it’s very likely they are going to stick given how much they already invested in the solution. They will keep investing in solving the small issues, and the small bugs until they get revenue on a regular basis an make their investment worthwhile.
+
+So that’s why you are probably focusing on this stage at the moment. And this is where I have a few recommendations: 
+
+1. Focus on reducing Time-to-Production: this should be our North-Star-Metric: the time between first Test call and Production Calls. And we should work on helping developers speed it up as much as possible. 
+2. But to do so we need to understand exactly what causes friction, what slows them down in their development. And I mean this in 2 ways: on a « Product » level (we have to find where they are missing information, where they are facing bugs, what actions they are performing, where they are dropping off and why) but also on a « Project » level, for big accounts, high GMV projects, we have to figure out what’s their project, what’s their maturity, who do they have to convince, where they are at, etc. So it’s a mix of data and discussions.
+3. And this leads me to #3, which I think you are already doing: is to tailor the Customer’s Journey by Potential Gross Merchant Value of the account. Everything small go through a self-serve setup with nurturing sequences, documentations, maybe dev community, etc. But everything high value needs to be properly understood and sped up, so we get someone on the case. I’m not sure it’s a Sales person, probably more like a Developper Success Manager or Implementation Engineer, someone who has to help them get to Production stage as quickly as possible. 
+4. Technically, what does it mean: You need 3 infrastructures: 
+    1. an enrichment infra to enrich contacts and accounts that are singing up to know who you are talking to and what’s their potential, how to adapt your response
+    2. A behavior infra to measure how they are using the product, 
+
+
+And that’s the core of it. 
+Happy to go deeper anywhere if you have questions.

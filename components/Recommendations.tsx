@@ -11,28 +11,28 @@ interface Recommendation {
 const RECOMMENDATIONS: Recommendation[] = [
   {
     id: '1',
-    title: 'Drive down time-to-production',
-    description: 'North-star metric: time from sandbox to production call. Developer activation motion, not sales. Speed and friction removal.',
+    title: 'Focus on Time-To-Production',
+    description: 'North-star metric. Developer activation motion, not sales. Speed and friction removal.',
   },
   {
     id: '2',
-    title: 'Find out why, first',
-    description: 'Product issues (errors, activity, support tickets)? External factors (project maturity, team buy-in)? Docs? Fix the real cause.',
+    title: 'Identify High Potential Accounts',
+    description: 'Lead & account enrichment: ICP/persona match, target account fit, potential account value.',
   },
   {
     id: '3',
-    title: 'Split by value',
-    description: 'Indie: automation and self-serve docs. High-GMV stalls: a person on them fast. Humans where the money is.',
+    title: 'Understand their usage',
+    description: 'Total API calls, call frequency, endpoints usage, error rates, activity patterns.',
   },
   {
     id: '4',
-    title: 'Remove frictions and support devs',
-    description: 'Product friction → roadmap. Dev enablement → docs, content, support. External → nurture and keep in the loop.',
+    title: 'Understand their context',
+    description: 'Get in touch with high potential. Understand: maturity, timeline, processes, frictions.',
   },
   {
     id: '5',
-    title: 'Build developer credibility',
-    description: 'Presence and ratings in dev communities and directories. Not just acquisition, but validation when devs compare solutions.',
+    title: 'Automate the rest',
+    description: 'Nurturing sequences, re-activation alerts, self-serve docs for the long tail.',
   },
 ];
 
